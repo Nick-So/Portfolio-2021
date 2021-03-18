@@ -218,6 +218,7 @@ a {
     grid-area: footer;
     background: #7C51A1;
     color: #E3E5E8;
+    padding: 0 10px 0 10px;
     font-size: 18pt;
     font-weight: 300px;
     height: 100px;
