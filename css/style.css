@@ -214,11 +214,12 @@ a {
 /*#endregion Card Grid */
 
 /*#region Footer */
-
-
 .footer {
     grid-area: footer;
     background: #7C51A1;
+    color: #E3E5E8;
+    font-size: 18pt;
+    font-weight: 300px;
     height: 100px;
     display: flex;
     align-items: center;
@@ -233,12 +234,10 @@ a {
 }
 
 /*#endregion Footer */
-
 }
 
 @media only screen and (min-width: 1100px) {
 /*#region General Styling */
-
 html, body {
     margin: 0;
     padding: 0;
@@ -396,7 +395,6 @@ a {
 /*#endregion Homepage */
 
 /*#region Card Grid */
-
 .grid {
     padding: 50px;
     grid-area: content;
@@ -438,11 +436,12 @@ a {
 /*#endregion Card Grid */
 
 /*#region Footer */
-
-
 .footer {
     grid-area: footer;
     background: #7C51A1;
+    color: #E3E5E8;
+    font-size: 18pt;
+    font-weight: 300px;
     height: 100px;
     display: flex;
     align-items: center;
@@ -457,12 +456,10 @@ a {
 }
 
 /*#endregion Footer */
-
 }
 
 @media only screen and (min-width: 1350px){
 /*#region General Styling */
-
 html, body {
     margin: 0;
     padding: 0;
@@ -506,7 +503,6 @@ a {
 /*#endregion General Styling */
 
 /*#region Navigation */
-
 .header {
     grid-area: header;
     position: relative;
@@ -622,7 +618,6 @@ a {
 /*#endregion Homepage */
 
 /*#region Card Grid */
-
 .grid {
     padding: 50px;
     grid-area: content;
@@ -664,11 +659,12 @@ a {
 /*#endregion Card Grid */
 
 /*#region Footer */
-
-
 .footer {
     grid-area: footer;
     background: #7C51A1;
+    color: #E3E5E8;
+    font-size: 18pt;
+    font-weight: 300px;
     height: 100px;
     display: flex;
     align-items: center;
@@ -683,5 +679,4 @@ a {
 }
 
 /*#endregion Footer */
-
 }
