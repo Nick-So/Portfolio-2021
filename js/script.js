@@ -1,10 +1,15 @@
-$(document).ready(function () {
+$(document).ready(function() {
   console.log('ready');
 
-  setTimeout(function(){
-    $("#hamburger").on("click", function(){
-      $("#nav").slideToggle();
-      });
+  $("#hamburger").on('click', function() {
+    $('#nav').slideToggle();
+  });
 
- },1000);
+  $('.card').on('click', function() {
+      var id = $(this).attr('id');
+      console.log(id);
+      $('.overlayContainer').css('display', 'flex').hide().fadeIn(500);
+      $(`#${id}.overlay`).removeClass('inactive').addClass('active');
+  });
+
 });
