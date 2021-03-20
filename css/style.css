@@ -415,7 +415,7 @@
         display: grid;
         grid-template-columns: 300px 1fr;
         grid-template-rows: 1fr 100px;
-        grid-template-areas: "header content" "header content" "header content" "header content" "footer footer";
+        grid-template-areas: "header content" "footer footer";
     }
     #backVideo {
         display: flex;
@@ -523,6 +523,9 @@
     .content {
         position: relative;
         grid-area: content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .overlayContainer {
         position: fixed;
@@ -542,35 +545,36 @@
     .overlay {
         position: absolute;
         height: 70%;
+        max-height: 520px;
         width: 50%;
         border-radius: 15px;
         z-index: 100;
+        animation: overlayOn 0.8s ease 1;
     }
     .overlay iframe {
+        padding: 0;
+        margin: 0 auto;
         height: 100%;
         width: 100%;
         border: 10px ridge #7C51A1;
         border-radius: 15px;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-        background-color:#E3E5E8;
-        animation: overlayOn 0.8s ease 1;
+        background-color: #E3E5E8;
     }
-
     @keyframes overlayOn {
-        0%{
+        0% {
             height: 0px;
             width: 0px;
         }
-        50%{
+        75% {
             height: 3px;
-            width:100%
+            width: 50%
         }
-        end{
-            height: 100%;
-            width:100%
+        end {
+            height: 70%;
+            width: 50%
         }
     }
-
     .active {
         display: flex;
         align-items: center;
@@ -579,10 +583,13 @@
     .inactive {
         display: none;
     }
+
     /*#region Card Grid */
     .grid {
         padding: 50px;
         display: grid;
+        align-items: center;
+        justify-content: center;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: "grid1 grid2 grid3" "grid4 grid5 grid6";
