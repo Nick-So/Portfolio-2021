@@ -30,7 +30,9 @@ a {
     position: relative;
     height: 100%;
     width: 100%;
-    animation: fadeIn 5s ease 1;
+    opacity: 0%;
+    animation: fadeIn 5s ease 0.8s 1;
+    animation-fill-mode: forwards;
     grid-template-columns: 100%;
     grid-template-rows: 6fr 1fr;
     grid-template-areas: "iframe" "buttons";

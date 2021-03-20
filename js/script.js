@@ -8,7 +8,7 @@ $(document).ready(function() {
   $('.card').on('click', function() {
       var id = $(this).attr('id');
       console.log(id);
-      $('.overlayContainer').css('display', 'flex').hide().fadeIn(500);
+      $('.overlayContainer').css('display', 'flex').hide().fadeIn(300);
       $(`#${id}.overlay`).removeClass('inactive').addClass('active');
   });
 
