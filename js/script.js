@@ -1,11 +1,11 @@
 $(document).ready(function () {
   console.log('ready');
 
-  /*Preloader*/
-  function fade(){
-    $('.preloader').fadeOut(2500)
-  };
-  setTimeout(fade, 2000);
+  // /*Preloader*/
+  // function fade(){
+  //   $('.preloader').fadeOut(2500)
+  // };
+  // setTimeout(fade, 2000);
 
   /*Navigation Slider*/
   $("#hamburger").on('click', function () {
