@@ -1,13 +1,18 @@
 $(document).ready(function () {
   console.log('ready');
 
+  /*Preloader*/
+  function fade(){
+    $('.preloader').fadeOut(2500)
+  };
+  setTimeout(fade, 2000);
+
   /*Navigation Slider*/
   $("#hamburger").on('click', function () {
     $('#nav').slideToggle();
   });
 
   /*Card Overlay*/
-
   $('.card').on('click', function () {
     var id = $(this).attr('id');
     console.log(id);
