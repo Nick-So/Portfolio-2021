@@ -1,5 +1,16 @@
-$(document).ready(function () {
-  console.log('ready');
+jQuery(function ($) {
+
+  $('html, body').stop().animate({ "opacity": 1 },1000);
+
+  function redirectPage(link) {
+    document.location.href = link;
+  }
+
+  $(document).on('click', "a", function (event) {
+    event.preventDefault();
+    linkLocation = this.href;
+    $("body").fadeOut(1000, function () { redirectPage(linkLocation) });
+  });
 
   // /*Preloader*/
   // function fade(){
@@ -20,12 +31,11 @@ $(document).ready(function () {
     $(`#${id}.overlay`).removeClass('overlayOff inactive').addClass('overlayOn active');
   });
 
-  $('.overlayContainer').on('click', function () {
+  $('.overlayContainer').click(function () {
     var id = $('.active').attr('id');
-    var src = $('.gameContent').attr("src");
-    console.log(id, src);
     $(`#${id}.overlay.overlayOn`).removeClass('overlayOn active').addClass('overlayOff inactive');
-    $('#gameContent.videoPlayer').attr("src", src);
     $('.overlayContainer').fadeOut(1500);
+    var src = $(this).contents().find("iframe").attr('src');
+    console.log(src);
   });
 });
