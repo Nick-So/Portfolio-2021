@@ -1,7 +1,6 @@
 jQuery(function ($) {
 
-  $('html, body').stop().animate({ "opacity": 1 },1000);
-
+  //Fade Out when click link
   function redirectPage(link) {
     document.location.href = link;
   }
@@ -18,12 +17,12 @@ jQuery(function ($) {
   // };
   // setTimeout(fade, 2000);
 
-  /*Navigation Slider*/
+  //Navigation Slider
   $("#hamburger").on('click', function () {
     $('#nav').slideToggle();
   });
 
-  /*Card Overlay*/
+  //Card Overlay
   $('.card').on('click', function () {
     var id = $(this).attr('id');
     console.log(id);
@@ -38,4 +37,11 @@ jQuery(function ($) {
     var src = $(this).contents().find("iframe").attr('src');
     console.log(src);
   });
+
+
+
+
+
+
+
 });
