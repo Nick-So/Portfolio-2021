@@ -120,4 +120,6 @@ a {
     box-shadow: 0 0 0 3px #7C51A1;
     border-radius: 15px;
     border: 2px solid #E3E5E8;
+    cursor: pointer;
+    outline: none;
 }

@@ -5,7 +5,7 @@ jQuery(function ($) {
     document.location.href = link;
   }
 
-  $(document).on('click', "a", function (event) {
+  $(document).on('click', "a:not('.external')", function (event) {
     event.preventDefault();
     linkLocation = this.href;
     $("body").fadeOut(1000, function () { redirectPage(linkLocation) });
@@ -35,7 +35,7 @@ jQuery(function ($) {
     $(`#${id}.overlay`).removeClass('active').addClass('closed');
     $('.overlayContainer').fadeOut(1000);
     setTimeout(function () { $(`#${id}.overlay`).removeClass('closed').addClass('inactive'); }, 800);
-    $(`#${id} iframe`).attr('src', $(`#${id} iframe`).attr('src'));
+    setTimeout(function () {$(`#${id} iframe`).attr('src', $(`#${id} iframe`).attr('src'));}, 800);
   });
 
 
