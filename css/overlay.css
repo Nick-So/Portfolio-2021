@@ -99,6 +99,26 @@ a {
     cursor: pointer;
 }
 
+.downloadButtons button.subscribe{
+    background-image: url('../images/subscribe-button.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.downloadButtons button.patreon{
+    background-image: url('../images/patreon-button.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
 .notAvailable {
     grid-area: buttons;
     display: flex;
@@ -107,6 +127,17 @@ a {
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 15px;
+}
+
+.notAvailable.image {
+    grid-area: buttons;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top:-10px;
 }
 
 .notAvailable button{
