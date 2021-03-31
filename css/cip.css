@@ -257,6 +257,25 @@ ul, li, a {
 
 /*#endregion Overview */
 
+/*#region Research */
+.research {
+    margin-top: 25px;
+    background-color: #9492BA;
+    border-radius: 5px;
+    color: #E3E5E8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr;
+    grid-template-areas: "title title" "info1 image" "info2 image" "info3 image";
+}
+
+.research h1{
+    grid-area: title;
+    padding-top: 20px;
+}
+
+/*#endregion Research */
+
 .image-credits {
     margin: 20px 0 20px 0;
     text-align: center;

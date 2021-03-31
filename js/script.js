@@ -27,15 +27,15 @@ jQuery(function ($) {
     var id = $(this).attr('id');
     console.log(id);
     $('.overlayContainer').css('display', 'flex').hide().fadeIn(300);
-    $(`#${id}.overlay`).removeClass('overlayOff inactive').addClass('overlayOn active');
+    $(`#${id}.overlay`).removeClass('inactive').addClass('active');
   });
 
   $('.overlayContainer').click(function () {
     var id = $('.active').attr('id');
-    $(`#${id}.overlay.overlayOn`).removeClass('overlayOn active').addClass('overlayOff inactive');
-    $('.overlayContainer').fadeOut(1500);
-    var src = $(this).contents().find("iframe").attr('src');
-    console.log(src);
+    $(`#${id}.overlay`).removeClass('active').addClass('closed');
+    $('.overlayContainer').fadeOut(1000);
+    setTimeout(function () { $(`#${id}.overlay`).removeClass('closed').addClass('inactive'); }, 800);
+    $(`#${id} iframe`).attr('src', $(`#${id} iframe`).attr('src'));
   });
 
 

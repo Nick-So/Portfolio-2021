@@ -5,6 +5,7 @@ html, body {
     position: relative;
     background-color: #E3E5E8;
     font-family: 'Mulish', sans-serif;
+    overflow: hidden;
 }
 
 h1 {
@@ -40,6 +41,12 @@ a {
 }
 
 .gamePage iframe {
+    grid-area: iframe;
+    height: 100%;
+    width: 100%;
+}
+
+.gamePage img {
     grid-area: iframe;
     height: 100%;
     width: 100%;
