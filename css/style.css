@@ -64,7 +64,7 @@ a {
     z-index: 1;
     background: url('../images/name_square-alt.png');
     background-size: contain;
-    border-radius: 5px;
+    border-radius: 5px 5px 0px 0px;
 }
 
 #navContainer {
