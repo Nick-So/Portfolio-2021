@@ -175,10 +175,6 @@ ul, li, a {
     grid-template-areas: "team-tools role";
 }
 
-.intro ul{
-    list-style: none;
-}
-
 .intro h6 {
     font-size: 18pt;
     font-weight: bolder;
@@ -186,6 +182,7 @@ ul, li, a {
 
 .intro p, ul{
     font-size: 14pt;
+    list-style: none;
 }
 
 .intro li{
@@ -220,7 +217,7 @@ ul, li, a {
     color: #444c5c;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 4fr;
+    grid-template-rows: 100px 1fr;
     grid-template-areas: "title title" "problem solution";
 }
 
@@ -229,19 +226,30 @@ ul, li, a {
     padding-top: 20px;
 }
 
+.overview h3{
+    font-weight: bolder;
+    text-align: left;
+}
+
+.overview p{
+    font-size: 16pt;
+    text-align: left;
+}
+
+.overview ul{
+    list-style: decimal;
+    padding: 0 20px 0 20px;
+    text-align: left;
+}
+
+.overview li{
+    margin-bottom: 5px;
+}
+
 .problem{
     grid-area: problem;
     padding: 0 25px 25px 25px;
-    text-align: left;
     border-right: 3px solid #444c5c;
-}
-
-.problem h3{
-    font-weight: bolder;
-}
-
-.problem p{
-    font-size: 16pt;
 }
 
 .solution{
@@ -250,45 +258,287 @@ ul, li, a {
     text-align: left;
 }
 
-.solution h3{
-    font-weight: bolder;
-}
-
-.solution p{
-    font-size: 16pt;
-}
-
 /*#endregion Overview */
 
 /*#region Research */
 .research {
     margin-top: 25px;
-    background-color: #9492BA;
+    background-color: #78A5A3;
     border-radius: 5px;
     color: #E3E5E8;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 1fr 1fr 1fr;
-    grid-template-areas: "title title" "info1 image" "info2 image" "info3 image";
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+    grid-template-areas: "title" "data" "analysis";
+}
+
+.research p{
+    font-size: 16pt;
+    margin-bottom: 0;
+    text-align: left;
 }
 
 .research h1{
     grid-area: title;
+    padding: 20px 0 20px 0;
+}
+
+.research h3{
+    font-weight: bolder;
+    text-align: left;
+}
+
+.research ul{
+    list-style: decimal;
+    padding: 0 20px 0 20px;
+    text-align: left;
+}
+
+.research li{
+    margin-bottom: 5px;
+}
+
+.research img{
+    width: 100%;
+}
+
+.data{
+    grid-area: data;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 3px solid #E3E5E8;
+}
+
+.plan{
+    padding: 0 25px 25px 25px;
+    margin-bottom: 20px;
+    border-right: 3px solid #E3E5E8;
+}
+
+.insights{
+    padding: 0 25px 25px 25px;
+    margin-bottom: 20px;
+}
+
+.analysis{
+    grid-area: analysis;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.empathymap{
+    padding: 0 25px 25px 25px;
+    border-right: 3px solid #E3E5E8;
+}
+
+.persona{
+    padding: 0 25px 25px 25px;
+}
+/*#endregion Research */
+
+/*#region Ideation */
+.ideation {
+    margin-top: 25px;
+    background-color: #E1B16A;
+    border-radius: 5px;
+    color: #444c5c;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: "title" "ideationContent";
+}
+
+.ideation p{
+    font-size: 16pt;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.ideation h1{
+    grid-area: title;
     padding-top: 20px;
 }
 
-/*#endregion Research */
-
-.image-credits {
-    margin: 20px 0 20px 0;
-    text-align: center;
-    color: #E3E5E8
+.ideation h3{
+    font-weight: bolder;
 }
 
-.image-credits a {
+.ideationContent{
+    grid-area: ideationContent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ideationContent img{
+    height: auto;
+    width: 100%;
+}
+
+.storyboard{
+    padding-bottom: 20px;
+    border-bottom: 3px solid #444c5c;
+}
+
+.storyboard img{
+    height: auto;
+    width: 100%;
+}
+
+.competitor-analysis{
+    padding: 20px 0 30px 0;
+    border-bottom: 3px solid #444c5c;
+}
+
+.competitor-analysis img{
+    width: 100%;
+}
+
+.cardsort{
+    padding: 20px 0 20px 0;
+    border-bottom: 3px solid #444c5c;
+}
+
+.cardsortImages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.cardsortImages img{
+    width: 50%;
+    height: 50%;
+}
+
+.userflow{
+    padding: 20px 0 20px 0;
+}
+
+.userflow img{
+    height: auto;
+    width: 100%;
+}
+
+/*#endregion Ideation */
+
+/*#region Prototyping */
+.prototyping {
+    margin-top: 25px;
+    background-color: #0378A6;
+    border-radius: 5px;
     color: #E3E5E8;
-    text-decoration: underline;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: "title" "prototypingContent";
 }
+
+.prototyping p{
+    font-size: 16pt;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.prototyping h1{
+    grid-area: title;
+    padding-top: 20px;
+}
+
+.prototyping h3{
+    font-weight: bolder;
+}
+
+.prototypingContent{
+    grid-area: prototypingContent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.prototypingContent img{
+    height: auto;
+    width: 100%;
+}
+
+.wireframe{
+    padding: 20px 0 30px 0;
+    border-bottom: 3px solid #E3E5E8;
+}
+
+.hifi{
+    padding: 20px 0 30px 0;
+    border-bottom: 3px solid #E3E5E8;
+}
+
+.prototype{
+    padding-top: 20px;
+    height: 100vh;
+    width: 100%;
+}
+
+.prototype iframe{
+    height: 90%;
+    width: 100%;
+}
+
+
+/*#endregion Prototyping */
+
+/*#region Overview */
+.conclusion {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #F56C63;
+    border-radius: 5px;
+    color: #444c5c;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: "title title" "reflection direction";
+}
+
+.conclusion h1{
+    grid-area: title;
+    padding-top: 20px;
+}
+
+.conclusion h3{
+    font-weight: bolder;
+    text-align: left;
+}
+
+.conclusion p{
+    font-size: 16pt;
+    text-align: left;
+}
+
+.conclusion ul{
+    list-style: decimal;
+    padding: 0 20px 0 20px;
+    text-align: left;
+}
+
+.conclusion li{
+    margin-bottom: 5px;
+}
+
+.reflection{
+    grid-area: reflection;
+    padding: 0 25px 25px 25px;
+    border-right: 3px solid #444c5c;
+}
+
+.direction{
+    grid-area: direction;
+    padding: 0 25px 25px 25px;
+    text-align: left;
+}
+
+/*#endregion Overview */
 
 /*#endregion Case Study */
 
