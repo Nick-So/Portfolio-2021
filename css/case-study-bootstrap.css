@@ -1,0 +1,232 @@
+/*#region General */
+.case-study {
+    position: relative;
+    grid-area: content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.case-study img{
+    max-width: 70%;
+    border-radius: 5px;
+}
+
+h1{
+    grid-area: title;
+    padding-top: 20px;
+}
+
+h4{
+    font-weight: bolder;
+    text-align: left;
+}
+
+p{
+    font-size: 16pt;
+    text-align: left;
+}
+
+ul{
+    font-size: 14pt;
+    list-style: decimal;
+    padding: 0 20px 0 20px;
+    text-align: left;
+}
+
+li{
+    margin-bottom: 5px;
+}
+
+.jumbotron {
+    padding: 0;
+    margin-bottom: 10px;
+    height: 50vh;
+    background-color: black;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 5px;
+}
+/*#endregion General */
+
+/*#region Intro */
+.intro{
+    margin-top: 25px;
+    padding: 50px;
+    border-radius: 5px;
+    text-align: left;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "team-tools role";
+}
+
+.intro ul{
+    list-style: none;
+}
+
+.intro li{
+    margin-bottom: 20px;
+}
+
+.team-tools{
+    grid-area: team-tools;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 0 20px;
+    height: 100%;
+}
+
+.role{
+    grid-area: role;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 0 20px;
+    height: 100%;
+    border-radius: 5px;
+}
+/*#endregion Intro */
+
+/*#region Overview */
+.overview {
+    margin-top: 25px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: "title title" "problem solution";
+}
+
+.problem{
+    grid-area: problem;
+    padding: 0 25px 25px 25px;
+    border-right: 3px solid #444c5c;
+}
+
+.solution{
+    grid-area: solution;
+    padding: 0 25px 25px 25px;
+    text-align: left;
+}
+
+/*#endregion Overview */
+
+/*#region Research */
+.research {
+    margin-top: 25px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: "title" "data";
+}
+
+.data{
+    grid-area: data;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.plan{
+    padding: 0 25px 25px 25px;
+    border-right: 3px solid #E3E5E8;
+}
+
+.insights{
+    padding: 0 25px 25px 25px;
+}
+
+/*#endregion Research */
+
+/*#region Ideation */
+.ideation {
+    margin-top: 25px;
+    padding: 0 25px 25px 25px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: "title" "ideationContent";
+}
+
+.ideationContent{
+    grid-area: ideationContent;
+}
+/*#endregion Ideation */
+
+/*#region Prototyping */
+.prototyping {
+    margin-top: 25px;
+    padding: 0 25px 25px 25px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: "title" "prototypingContent";
+}
+
+.prototypingContent{
+    grid-area: prototypingContent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wireframe{
+    padding: 20px 0 30px 0;
+    border-bottom: 3px solid #E3E5E8;
+}
+
+.hifi{
+    padding: 20px 0 30px 0;
+    border-bottom: 3px solid #E3E5E8;
+}
+
+.prototype{
+    padding-top: 20px;
+    height: 100vh;
+    width: 100%;
+}
+
+.prototype iframe{
+    height: 90%;
+    width: 70%;
+    border-radius: 5px;
+}
+
+
+/*#endregion Prototyping */
+
+/*#region Conclusion */
+.conclusion {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: "title title" "reflection direction";
+}
+
+.reflection{
+    grid-area: reflection;
+    padding: 0 25px 25px 25px;
+    border-right: 3px solid #444c5c;
+}
+
+.direction{
+    grid-area: direction;
+    padding: 0 25px 25px 25px;
+    text-align: left;
+}
+
+/*#endregion Conclusion */

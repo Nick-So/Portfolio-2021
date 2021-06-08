@@ -1,0 +1,521 @@
+/*#region General Styling */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    animation: fadeIn ease 1s;
+    height: 100%;
+    position: relative;
+    background-color: #E3E5E8;
+    font-family: 'Mulish', sans-serif;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+h1 {
+    font-size: 3vw;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+p {
+    font-size: 16pt;
+}
+
+a {
+    color: black;
+}
+
+.pageWrap {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr 100px;
+    grid-template-areas: "header content" "footer footer";
+}
+
+/*#endregion General Styling */
+
+/*#region Navigation */
+
+.header {
+    grid-area: header;
+    position: relative;
+    padding: 50px;
+    z-index: 2;
+}
+
+#logo {
+    height: 200px;
+    position: relative;
+    z-index: 1;
+    background: url('../images/name_square-alt.png');
+    background-size: contain;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#navContainer {
+    background-color: #4A3061;
+    border-radius: 5px;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#nav {
+    width: 100%;
+    display: none;
+    background-color: #4A3061;
+}
+
+#navLinkContainer {
+    width: 100%;
+    margin-top: -10px;
+    background-color: #4A3061;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    list-style: none;
+    padding: 0;
+}
+
+.navLink {
+    width: 70%;
+    padding: 10px 20px;
+    margin: 0 10px 0 10px;
+    text-align: center;
+    background-color: #A086B7;
+    border: 1px solid #E3E5E8;
+}
+
+.navLink:first-child {
+    padding-top: 20px;
+}
+
+.navLink:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+.navLink a {
+    color: #E3E5E8;
+    text-decoration: none;
+    font-size: 18pt;
+}
+
+.navLink hr {
+    background-color: #E3E5E8;
+    height: 2px;
+    width: 30%;
+}
+
+#hamburger {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    text-align: center;
+}
+
+#hamburger img {
+    height: 20px;
+    padding: 15px 0 0 0;
+}
+
+#hamburger:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+/*#endregion Navigation */
+
+/*#region Homepage */
+
+/* .preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    background-color: #7C51A1;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preloader img{
+    max-width: 300px;
+    max-height: 300px;
+    opacity: 0%;
+    animation: logoSlide 3s ease 1 forwards;
+}
+
+@keyframes logoSlide {
+    0%{
+        transform: translate(0px, 0px) scale(1);
+        opacity: 0%;
+    }
+    25%{
+        transform: translate(0px, 0px) scale(1);
+        opacity: 100%;
+    }
+    40%{
+        transform: translate(0px, 0px) scale(1);
+        opacity: 100%;
+    }
+    100%{
+        transform: translate(-270%, -105%) scale(0.65);
+        opacity: 20%;
+    }
+} */
+
+#homeVideo {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*#endregion Homepage */
+
+/*#region Card Grid */
+
+.noGrid {
+    padding: 50px;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    padding: 50px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid a{
+    text-decoration: none;
+}
+
+.card {
+    margin: 25px 50px 25px 0px;
+    margin: 25px 50px 25px 0px;
+    padding: 0;
+    min-width: 400px;
+    min-height: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-color: #4A3061;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card h3{
+    margin-top: 15px;
+    background-color: #4A3061;
+    color:#E3E5E8;
+    font-weight: 600;
+}
+
+
+/*#endregion Card Grid */
+
+/*#region Overlay */
+.overlayContainer {
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+}
+
+.overlay {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    border-radius: 15px;
+    z-index: 100;
+}
+
+.overlay iframe {
+    padding: 0;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.active {
+    display: block;
+    animation: overlayOn 0.8s ease 0.3s 1;
+    animation-fill-mode: forwards;
+}
+
+.inactive {
+    display: none;
+}
+
+.closed {
+    display: block;
+    animation: overlayOff 0.8s ease 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes overlayOn {
+    0% {
+        height: 0px;
+        width: 0px;
+    }
+    75% {
+        height: 0px;
+        max-height: 498px;
+        width: 50%;
+        max-width: 780px;
+    }
+    100% {
+        height: 70%;
+        max-height: 498px;
+        width: 50%;
+        max-width: 780px;
+    }
+}
+
+
+@keyframes overlayOff {
+    0% {
+        height: 70%;
+        max-height: 498px;
+        width: 50%;
+        max-width: 780px;
+    }
+    75% {
+        height: 0px;
+        max-height: 498px;
+        width: 50%;
+        max-width: 780px;
+    }
+    100% {
+        height: 0px;
+        width: 0px;
+    }
+}
+
+/*#endregion Overlay */
+
+/*#region Design */
+
+.design {
+    position: relative;
+    grid-area: content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlayContainer {
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    border-radius: 15px;
+    z-index: 100;
+}
+
+.overlay iframe {
+    padding: 0;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.active {
+    display: block;
+}
+
+.inactive {
+    display: none;
+}
+
+.overlayOn {
+    animation: overlayOn 0.8s ease 0.3s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes overlayOn {
+    0% {
+        height: 0px;
+        width: 0px;
+    }
+    75% {
+        height: 0px;
+        width: 50%
+    }
+    100% {
+        height: 70%;
+        max-height: 498px;
+        width: 50%;
+        max-width: 780px;
+    }
+}
+
+.overlayOff {
+    animation: overlayOff 0.8s ease 0.3s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes overlayOff {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(900deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+
+/*#endregion Design */
+
+/*#region Games */
+
+.games {
+    position: relative;
+    grid-area: content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*#endregion Games */
+
+/*#region About Me */
+
+.aboutMe {
+    position: relative;
+    padding: 100px 50px 0 0;
+    grid-area: content;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 1.5fr;
+    grid-template-areas: "intro content1 content2" "intro content3 content4";
+}
+
+.aboutMe h1 {
+    margin: 0 0 10px 0;
+}
+
+.aboutMe h2 {
+    line-height: 5px;
+}
+
+.aboutMe h3 {
+    margin-bottom: 0px;
+}
+
+.aboutMe h4 {
+    margin: 5px;
+    font-size: 18pt;
+    font-weight: normal;
+}
+
+.aboutMe p {
+    margin: 5px;
+    font-size: 18pt;
+    font-weight: normal;
+}
+
+.intro {
+    grid-area: intro;
+    align-items: flex-start;
+    margin-right: 40px;
+}
+
+.content1 {
+    grid-area: content1;
+    text-align: center;
+}
+
+.content2 {
+    grid-area: content2;
+    text-align: center;
+}
+
+.content3 {
+    grid-area: content3;
+    text-align: center;
+}
+
+.content4 {
+    grid-area: content4;
+    text-align: center;
+}
+
+/*#endregion About Me */
+
+/*#region Footer */
+
+.footer {
+    grid-area: footer;
+    background: #7C51A1;
+    color: #E3E5E8;
+    font-size: 24pt;
+    font-weight: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footerLink a {
+    color: #E3E5E8;
+    text-decoration: none;
+    font-size: 18pt;
+    font-weight: 300px;
+}
+
+/*#endregion Footer */

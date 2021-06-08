@@ -1,0 +1,270 @@
+/*#region Default Style */
+
+.styleguide {
+    display: flex;
+    flex-direction: column;
+}
+
+#logoPalette {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+}
+
+#typography {
+    position: relative;
+}
+
+#cardButton {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0px;
+}
+
+/*#region Logo*/
+
+#styleguideLogoContainer {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#styleguideLogoContainer img {
+    width: 100%;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 450px;
+}
+
+/*#endregion Logo*/
+
+/*#region Colors*/
+
+#colorContainer {
+    width: 100%;
+    height: 100%;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#colors {
+    height: 100%;
+    font-size: 20pt;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "purple1 grey1""purple2 grey2""purple3 grey3";
+    border: 1px solid #313131;
+}
+
+#purple1 {
+    grid-area: purple1;
+    width: 100%;
+    background-color: #4A3061;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E3E5E8;
+}
+
+#purple2 {
+    grid-area: purple2;
+    width: 100%;
+    background-color: #7C51A1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E3E5E8;
+}
+
+#purple3 {
+    grid-area: purple3;
+    width: 100%;
+    color: #E3E5E8;
+    background-color: #A086B7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#grey1 {
+    grid-area: grey1;
+    width: 100%;
+    color: #E3E5E8;
+    background-color: #313131;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#grey2 {
+    grid-area: grey2;
+    width: 100%;
+    color: #E3E5E8;
+    background-color: #838383;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#grey3 {
+    grid-area: grey3;
+    width: 100%;
+    background-color: #E3E5E8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*#endregion Colors*/
+
+/*#region Card */
+
+#cardContainer {
+    padding-right: 50px;
+}
+
+/*#endregion Card */
+
+/*#region Typography*/
+.styleguideHeader{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#styleguideHeader, h1, h2, h3, h4, h5, h6{
+    margin-right: 50px;
+    min-width: 75px;
+}
+/*#endregion Typography*/
+
+/*#region Buttons */
+
+#buttonContainer {
+    padding-left: 50px;
+    width: 100%;
+}
+
+#hoverstate {
+    box-shadow: 0 0 0 3px #A086B7;
+}
+
+#activestate {
+    box-shadow: 0 0 0 3px #4A3061;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "default app sub" "alt play patreon";
+}
+
+#defaultButtons {
+    grid-area: default;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    max-width: 200px;
+}
+
+#altButtons {
+    grid-area: alt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    max-width: 200px;
+}
+
+#subscribeButtons {
+    grid-area: sub;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    max-width: 200px;
+}
+
+#appStoreButtons {
+    grid-area: app;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    max-width: 200px;
+}
+
+#playStoreButtons {
+    grid-area: play;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    max-width: 200px;
+}
+
+#patreonButtons {
+    grid-area: patreon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+}
+
+/*#endregion Default Style */
+
+/*#endregion Default Style */
+
+@media screen and (max-width: 1805px) {
+    #cardButton {
+        flex-direction: column;
+    }
+    #cardContainer {
+        padding-right: 0px;
+        padding-bottom: 50px;
+        width: 100%;
+    }
+    #buttonContainer {
+        padding-left: 0px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1305px) {
+    #logoPalette, #cardButton {
+        flex-direction: column;
+    }
+    #colorContainer {
+        padding-right: 0px;
+        padding-bottom: 50px;
+        width: 100%;
+        min-height: 500px;
+    }
+    #colors {
+        font-size: 20pt;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "purple1" "purple2" "purple3" "grey1" "grey2" "grey3";
+        border: 1px solid #313131;
+    }
+    #styleguideLogoContainer {
+        padding-left: 0px;
+    }
+    #buttons {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "default alt" "app play" "sub patreon";
+    }
+}
+
+@media screen and (max-width: 760px) {
+    #buttons {
+        grid-template-columns: 1fr;
+        grid-template-areas: "default" "alt" "app" "play" "sub" "patreon";
+    }
+}

@@ -1,156 +1,55 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    position: relative;
-    background-color: #E3E5E8;
-    font-family: 'Mulish', sans-serif;
-    overflow: hidden;
-}
-
-h1 {
-    font-size: 3vw;
-    font-weight: 900;
-}
-
-h2 {
-    font-size: 2vw;
-    font-weight: 800;
-}
-
-p {
-    font-size: 16pt;
-}
-
-a {
-    color: black;
-}
-
-.gamePage {
+#overlayPage {
     display: grid;
     position: relative;
     height: 100%;
     width: 100%;
-    opacity: 0%;
-    animation: fadeIn 5s ease 0.8s 1;
-    animation-fill-mode: forwards;
-    grid-template-columns: 100%;
     grid-template-rows: 6fr 1fr;
-    grid-template-areas: "iframe" "buttons";
+    grid-template-columns: 100%;
+    grid-template-areas: "hero" "buttons";
+    text-align: center;
+    overflow: hidden;
+}
+
+
+#overlayPage h5{
+    margin: 0;
+}
+
+#hero {
+    grid-area: hero;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+#hero iframe{
+    height: 100%;
+}
+
+#heroImg{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
     align-items: center;
 }
 
-.gamePage iframe {
-    grid-area: iframe;
-    height: 100%;
+#heroImg img{
     width: 100%;
 }
 
-.gamePage img {
-    grid-area: iframe;
-    height: 100%;
-    width: 100%;
-}
-
-@keyframes fadeIn{
-    0%{
-        opacity: 0%;
-    }
-    100%{
-        opacity: 100%;
-    }
-}
-
-.downloadButtons {
+#bottomButtons {
     grid-area: buttons;
     display: flex;
-    flex-direction: row;
-    width: 100%;
     justify-content: space-evenly;
-}
-
-.downloadButtons button{
-    height: 50px;
-    min-width: 200px;
-    padding: 30px;    
-    background-color: black;
-    border: none;
-    border-radius: 10px;
-}
-
-.downloadButtons button.playStore{
-    background-image: url('../images/google-play-badge.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-
-.downloadButtons button.appStore{
-    background-image: url('../images/app-store-badge.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-.downloadButtons button.subscribe{
-    background-image: url('../images/subscribe-button.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-.downloadButtons button.patreon{
-    background-image: url('../images/patreon-button.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-.notAvailable {
-    grid-area: buttons;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: flex-start;
     align-items: center;
-    margin-bottom: 15px;
 }
 
-.notAvailable.image {
-    grid-area: buttons;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 15px;
-    margin-top:-10px;
-}
-
-.notAvailable button{
-    font-family: 'Mulish', sans-serif;
-    min-height: 50px;
-    min-width: 200px;
-    background-color: #7C51A1;
-    color:#E3E5E8;
-    font-size: 18pt;
-    font-weight: bold;
-    box-shadow: 0 0 0 3px #7C51A1;
-    border-radius: 15px;
-    border: 2px solid #E3E5E8;
-    cursor: pointer;
-    outline: none;
+@media screen and (max-width:450px){
+    #bottomButtons {
+        flex-direction: column;
+    }
 }

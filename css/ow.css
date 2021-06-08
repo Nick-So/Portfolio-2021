@@ -1,0 +1,67 @@
+html, body {
+    background-color: #fff;
+}
+
+.jumbotron {
+    background-image: linear-gradient(to bottom, #ffffff00 30%, #ffffff 90%), url('../images/case-study-images/OW/ow-hero-img.jpg');
+    color: #43484c;
+}
+
+/* Intro */
+.intro{
+    background-color: #3f3f3fb3;
+}
+
+.team-tools{
+    color: #E3E5E8;
+}
+
+.role{
+    background-color: #00000080;
+    color: #ffffff;
+}
+
+/* Overview */
+.overview {
+    background-color: #f99e1a;
+    color: #ffffff;
+}
+
+/*Research */
+.research {
+    background-color: #405275;
+    color: #ffffff;
+}
+
+/* Ideation */
+.ideation {
+    background-color: #43484c;
+    color: #ffffff;
+}
+
+.competitor-analysis{
+    padding: 20px 0 30px 0;
+    border-bottom: 3px solid #ffffff;
+}
+
+.cardsort{
+    padding: 20px 0 30px 0;
+    border-bottom: 3px solid #ffffff;
+}
+
+.userflow{
+    padding: 20px 0 20px 0;
+}
+
+
+/* Prototyping */
+.prototyping {
+    background-color: #f99e1a;
+    color: #ffffff;
+}
+
+/* Conclusion */
+.conclusion {
+    background-color: #405275;
+    color: #ffffff;
+}

@@ -5,9 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--jQuery and Scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
+
+    <!--Style Sheets-->
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/contentgrid.css" type="text/css" rel="stylesheet">
+    <link href="css/games.css" type="text/css" rel="stylesheet">
+
+    <!--Mulish Font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;800;900&display=swap" rel="stylesheet">
 
@@ -37,66 +45,73 @@
 </head>
 
 <body>
-    <section class="pageWrap">
-        <section class="header">
-            <div id=navContainer>
+    <section id="pageWrap">
+        <!--Pages are broken into 3 segments: Header, Content, Footer-->
+
+        <!--Header Area: Fixed to left side of screen, upper 100px on mobile-->
+        <section id="header">
+            <div id="navContainer">
+                <!--Applies shadow and rounded corners to the entire nav-->
                 <a href="index.html">
-                    <div id="logo">
+                    <!--Logo/Home Link is blank div with background image-->
+                    <div id="logoContainer">
+                        <div id="logo">
+                        </div>
                     </div>
                 </a>
                 <div id="navMenu">
-                    <div id="nav">
-                        <ul id="navLinkContainer">
-                            <li class="navLink">
-                                <a href="design.html">Design</a>
-                                <hr>
-                            </li>
-                            <li class="navLink">
-                                <a href="games.html">Games</a>
-                                <hr>
-                            </li>
-                            <li class="navLink">
-                                <a href="video.html">Video</a>
-                                <hr>
-                            </li>
-                            <li class="navLink">
-                                <a href="about.html">About</a>
-                                <hr>
-                            </li>
-                            <li class="navLink">
-                                <a class="external" target="_blank" href="nickso-resume.pdf">Resume</a>
-                                <hr>
-                            </li>
-                        </ul>
-                    </div>
+                    <!--Holds nav list and hamburger menu-->
+                    <ul id="navList">
+                        <li class="navLink">
+                            <a href="design.html">Design</a>
+                            <hr>
+                        </li>
+                        <li class="navLink">
+                            <a href="games.html">Games</a>
+                            <hr>
+                        </li>
+                        <li class="navLink">
+                            <a href="video.html">Video</a>
+                            <hr>
+                        </li>
+                        <li class="navLink">
+                            <a href="about.html">About</a>
+                            <hr>
+                        </li>
+                        <li class="navLink">
+                            <a class="external" target="_blank" href="nickso-resume.pdf">Resumé</a>
+                            <hr>
+                        </li>
+                    </ul>
                     <div id="hamburger">
                         <img src="./images/hamburger.png">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="videos">
-            <div class="noGrid">
-                <div class="card" id="dv">
-                    <img src="images/diceversa.jpg">
-                    <h3>Dice Versa: A Starfinder Actual Play</h3>
-                </div>
-                <div class="card" id="ucsc">
-                    <img src="images/studentfilms.jpg">
-                    <h3>Student Films 2012</h3>
-                </div>
-            </div>
 
+        <!--Content Area: Main portion of the screen.-->
+        <section id="content" class="contentGrid twoColumnGrid">
+            <div class="card" id="dv">
+                <img src="./images/video-art/diceversa.jpg">
+                <h6>Dice Versa: A Starfinder Actual Play</h6>
+            </div>
+            <div class="card" id="ucsc">
+                <img src="./images/video-art/studentfilms.jpg">
+                <h6>Student Films 2012</h6>
+            </div>
             <div class="overlayContainer">
                 <div id="dv" class="overlay inactive">
-                    <iframe id="video" src="videopages/diceversa.html"></iframe>
+                    <iframe class ="videoOnly" src="./videos/diceversa.html"></iframe>
                 </div>
                 <div id="ucsc" class="overlay inactive">
-                    <iframe id="video" src="videopages/studentfilms.html"></iframe>
+                    <iframe src="./videos/studentfilms.html"></iframe>
                 </div>
             </div>
         </section>
-        <section class="footer">
+
+        <!--Footer Area: Locked to bottom of content-->
+        <section id="footer">
             <div class="footerLink">
                 <a href="design.html">Design</a>
             </div>

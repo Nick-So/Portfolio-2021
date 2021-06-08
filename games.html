@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--jQuery and Scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
+
+    <!--Style Sheets-->
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/contentgrid.css" type="text/css" rel="stylesheet">
+
+    <!--Mulish Font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;800;900&display=swap" rel="stylesheet">
 
@@ -37,101 +44,109 @@
 </head>
 
 <body>
-    <section class="pageWrap">
-        <section class="header">
-            <div id=navContainer>
+    <section id="pageWrap">
+        <!--Pages are broken into 3 segments: Header, Content, Footer-->
+
+        <!--Header Area: Fixed to left side of screen, upper 100px on mobile-->
+        <section id="header">
+            <div id="navContainer">
+                <!--Applies shadow and rounded corners to the entire nav-->
                 <a href="index.html">
-                    <div id="logo">
+                    <!--Logo/Home Link is blank div with background image-->
+                    <div id="logoContainer">
+                        <div id="logo">
+                        </div>
                     </div>
                 </a>
                 <div id="navMenu">
-                    <div id="nav">
-                        <ul id="navLinkContainer">
-                            <li class="navLink">
-                                <a href="design.html">Design</a>
-                                <hr>
-                            </li>
-                            <li class="navLink">
-                                <a href="games.html">Games</a>
-                                <hr>
-                            </li>
-                            <li class="navLink">
-                                <a href="video.html">Video</a>
-                                <hr>
-                            </li>
-                            <li class="navLink">
-                                <a href="about.html">About</a>
-                                <hr>
-                            </li>
-                            <li class="navLink">
-                                <a class="external" target="_blank" href="nickso-resume.pdf">Resume</a>
-                                <hr>
-                            </li>
-                        </ul>
-                    </div>
+                    <!--Holds nav list and hamburger menu-->
+                    <ul id="navList">
+                        <li class="navLink">
+                            <a href="design.html">Design</a>
+                            <hr>
+                        </li>
+                        <li class="navLink">
+                            <a href="games.html">Games</a>
+                            <hr>
+                        </li>
+                        <li class="navLink">
+                            <a href="video.html">Video</a>
+                            <hr>
+                        </li>
+                        <li class="navLink">
+                            <a href="about.html">About</a>
+                            <hr>
+                        </li>
+                        <li class="navLink">
+                            <a class="external" target="_blank" href="nickso-resume.pdf">Resumé</a>
+                            <hr>
+                        </li>
+                    </ul>
                     <div id="hamburger">
                         <img src="./images/hamburger.png">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="games">
-            <div class="grid">
-                <div class="card" id="se">
-                    <img src="images/game-art/sweet-escapes.jpg">
-                    <h3>Level Designer</h3>
-                </div>
-                <div class="card" id="nova">
-                    <img src="images/game-art/one-nova.jpg">
-                    <h3>Game Design Consultant</h3>
-                </div>
-                <div class="card" id="cjb">
-                    <img src="images/game-art/cookie-jam-blast.jpg">
-                    <h3>Senior Game Designer</h3>
-                </div>
-                <div class="card" id="cj">
-                    <img src="images/game-art/cookie-jam.jpg">
-                    <h3>Game Designer</h3>
-                </div>
-                <div class="card" id="rdp">
-                    <img src="images/game-art/robot-dance-party.jpg">
-                    <h3>Assistant Designer & Producer</h3>
-                </div>
-                <div class="card" id="mm">
-                    <img src="images/game-art/monster-match.jpg">
-                    <h3>Assistant Designer & Producer</h3>
-                </div>
-                <div class="card" id="qs">
-                    <img src="images/game-art/quests-and-sorcery.jpg">
-                    <h3>Assistant Designer</h3>
-                </div>
+
+        <!--Content Area: Main portion of the screen.-->
+        <section id="content" class="contentGrid">
+            <div class="card" id="se">
+                <img src="images/game-art/sweet-escapes.jpg">
+                <h6>Content Designer</h6>
+            </div>
+            <div class="card" id="nova">
+                <img src="images/game-art/one-nova.jpg">
+                <h6>Game Design Consultant</h6>
+            </div>
+            <div class="card" id="cjb">
+                <img src="images/game-art/cookie-jam-blast.jpg">
+                <h6>Senior Game Designer</h6>
+            </div>
+            <div class="card" id="cj">
+                <img src="images/game-art/cookie-jam.jpg">
+                <h6>Game Designer</h6>
+            </div>
+            <div class="card" id="rdp">
+                <img src="images/game-art/robot-dance-party.jpg">
+                <h6>Assistant Designer & Producer</h6>
+            </div>
+            <div class="card" id="mm">
+                <img src="images/game-art/monster-match.jpg">
+                <h6>Assistant Designer & Producer</h6>
+            </div>
+            <div class="card" id="qs">
+                <img src="images/game-art/quests-and-sorcery.jpg">
+                <h6>Assistant Designer</h6>
             </div>
 
             <div class="overlayContainer">
                 <div id="se" class="overlay inactive">
-                    <iframe src="gamepages/sweet-escapes.html"></iframe>
+                    <iframe src="./games/sweet-escapes.html"></iframe>
                 </div>
                 <div id="nova" class="overlay inactive">
-                    <iframe src="gamepages/onenova.html"></iframe>
+                    <iframe src="./games/onenova.html"></iframe>
                 </div>
                 <div id="cjb" class="overlay inactive">
-                    <iframe src="gamepages/cjb.html"></iframe>
+                    <iframe src="./games/cjb.html"></iframe>
                 </div>
                 <div id="cj" class="overlay inactive">
-                    <iframe src="gamepages/cj.html"></iframe>
+                    <iframe src="./games/cj.html"></iframe>
                 </div>
                 <div id="rdp" class="overlay inactive">
-                    <iframe src="gamepages/rdp.html"></iframe>
+                    <iframe src="./games/rdp.html"></iframe>
                 </div>
                 <div id="mm" class="overlay inactive">
-                    <iframe src="gamepages/mm.html"></iframe>
+                    <iframe src="./games/mm.html"></iframe>
                 </div>
                 <div id="qs" class="overlay inactive">
-                    <iframe src="gamepages/qs.html"></iframe>
+                    <iframe src="./games/qs.html"></iframe>
                 </div>
             </div>
         </section>
-        <section class="footer">
+
+        <!--Footer Area: Locked to bottom of content-->
+        <section id="footer">
             <div class="footerLink">
                 <a href="design.html">Design</a>
             </div>

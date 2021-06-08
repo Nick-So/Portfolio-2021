@@ -11,15 +11,11 @@ jQuery(function ($) {
     $("body").fadeOut(1000, function () { redirectPage(linkLocation) });
   });
 
-  // /*Preloader*/
-  // function fade(){
-  //   $('.preloader').fadeOut(2500)
-  // };
-  // setTimeout(fade, 2000);
-
   //Navigation Slider
+  $('#navList').css('display', 'flex').hide()
+
   $("#hamburger").on('click', function () {
-    $('#nav').slideToggle();
+    $('#navList').slideToggle();
   });
 
   //Card Overlay

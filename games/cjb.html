@@ -5,8 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--jQuery and Scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/script.js" type="text/javascript"></script>
+
+    <!--Style Sheets-->
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
     <link href="../css/overlay.css" type="text/css" rel="stylesheet">
+
+    <!--Mulish Font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;800;900&display=swap" rel="stylesheet">
 
@@ -32,18 +40,24 @@
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
 
-    <title>Nick So</title>
+    <title>Nick So - Cookie Jam Blast</title>
 </head>
 
 <body>
-    <section class="gamePage">
-        <img src="../images/game-art/one-nova.jpg">
-        <div class="notAvailable image">
-            <h3>Not Available for Download (Yet?)</h3>
-            <a class="external" target="_blank" href="https://onenovathegame.com/"><button>Check out the
-                    Website</button></a>
+    <div id="overlayPage">
+        <div id="hero">
+            <iframe src="https://www.youtube.com/embed/OAyq_jbvawk" title="Cookie Jam Blast" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
-    </section>
+        <div id="bottomButtons">
+            <a target="_blank" href="https://apps.apple.com/us/app/cookie-jam-blast-match-3-game/id1034920425"><button
+                    class="appStore"></button></a>
+            <a target="_blank"
+                href="https://play.google.com/store/apps/details?id=air.com.sgn.cookiejamblast.gp&hl=en_US&gl=US"><button
+                    class="playStore"></button></a>
+        </div>
+    </div>
 </body>
 
 </html>

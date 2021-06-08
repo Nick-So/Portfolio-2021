@@ -5,9 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--jQuery and Scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
+
+    <!--Style Sheets-->
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/contentgrid.css" type="text/css" rel="stylesheet">
+    <link href="css/games.css" type="text/css" rel="stylesheet">
+
+    <!--Mulish Font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;800;900&display=swap" rel="stylesheet">
 
@@ -33,77 +41,95 @@
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
 
-    <title>Nick So - Design</title>
+    <title>Nick So - Games</title>
 </head>
 
 <body>
-    <section class="pageWrap">
-        <section class="header">
-            <div id=navContainer>
+    <section id="pageWrap">
+        <!--Pages are broken into 3 segments: Header, Content, Footer-->
+
+        <!--Header Area: Fixed to left side of screen, upper 100px on mobile-->
+        <section id="header">
+            <div id="navContainer">
+                <!--Applies shadow and rounded corners to the entire nav-->
                 <a href="index.html">
-                    <div id="logo">
+                    <!--Logo/Home Link is blank div with background image-->
+                    <div id="logoContainer">
+                        <div id="logo">
+                        </div>
                     </div>
                 </a>
                 <div id="navMenu">
-                    <div id="nav">
-                        <ul id="navLinkContainer">
-                            <li class="navLink">
-                                <a href="design.html">Design</a>
-                                <hr>
-                            </li>
-                            <li class="navLink">
-                                <a href="games.html">Games</a>
-                                <hr>
-                            </li>
-                            <li class="navLink">
-                                <a href="video.html">Video</a>
-                                <hr>
-                            </li>
-                            <li class="navLink">
-                                <a href="about.html">About</a>
-                                <hr>
-                            </li>
-                            <li class="navLink">
-                                <a class="external" target="_blank" href="nickso-resume.pdf">Resume</a>
-                                <hr>
-                            </li>
-                        </ul>
-                    </div>
+                    <!--Holds nav list and hamburger menu-->
+                    <ul id="navList">
+                        <li class="navLink">
+                            <a href="design.html">Design</a>
+                            <hr>
+                        </li>
+                        <li class="navLink">
+                            <a href="games.html">Games</a>
+                            <hr>
+                        </li>
+                        <li class="navLink">
+                            <a href="video.html">Video</a>
+                            <hr>
+                        </li>
+                        <li class="navLink">
+                            <a href="about.html">About</a>
+                            <hr>
+                        </li>
+                        <li class="navLink">
+                            <a class="external" target="_blank" href="nickso-resume.pdf">Resumé</a>
+                            <hr>
+                        </li>
+                    </ul>
                     <div id="hamburger">
                         <img src="./images/hamburger.png">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="design">
-            <div class="grid">
-                <!-- <a href="styleguide.html">
-                    <div class="card" id="styleguide">
-                        <img src="images/styleguide.jpg">
-                        <h3>Portfolio Style Guide</h3>
-                    </div>
-                </a> -->
-                <a class="external" target="_blank" href="https://sites.google.com/view/robo-runner/">
-                    <div class="card" id="robotrunner">
-                        <img src="images/game-art/roborunner.jpg">
-                        <h3>Game Design Document: Robo-Runner</h3>
-                    </div>
-                </a>
-                <a href="cip-case-study.html">
-                    <div class="card" id="cip">
-                        <img src="images/case-study-images/CIP/cip.jpg">
-                        <h3>Case Study: California Innocence Project</h3>
-                    </div>
-                </a>
-                <!-- <a href="doe-case-study.html">
-                    <div class="card" id="doe">
-                        <img src="images/case-study-images/DOE/doe.jpg">
-                        <h3>Case Study: Department of Education</h3>
-                    </div>
-                </a> -->
+
+        <!--Content Area: Main portion of the screen.-->
+        <section id="content" class="contentGrid">
+            <a href="./design/style-guide.html">
+                <div class="card" id="styleguide">
+                    <img src="images/styleguide.jpg">
+                    <h6>Portfolio Style Guide</h6>
+                </div>
+            </a>
+            <div class="overlayContainer">
+                <div id="robotrunner" class="overlay inactive">
+                    <iframe src="./design/robo-runner.html"></iframe>
+                </div>
             </div>
+            <div class="card" id="robotrunner">
+                <img src="./images/game-art/roborunner.jpg">
+                <h6>GDD Sample: <nobr>Robo-Runner</nobr>
+                </h6>
+            </div>
+            <a href="./design/ow.html">
+                <div class="card" id="doe">
+                    <img src="images/case-study-images/OW/ow-menu-update.png">
+                    <h6>Overwatch: Unofficial Menu Update</h6>
+                </div>
+            </a>
+            <a href="./design/cip.html">
+                <div class="card" id="cip">
+                    <img src="images/case-study-images/CIP/cip.jpg">
+                    <h6>CA Innocence: Harnessing the Power of Social Media</h6>
+                </div>
+            </a>
+            <a href="./design/doe.html">
+                <div class="card" id="doe">
+                    <img src="images/case-study-images/DOE/doe.jpg">
+                    <h6>Dept. of Education: Making Learning Easy</h6>
+                </div>
+            </a>
         </section>
-        <section class="footer">
+
+        <!--Footer Area: Locked to bottom of content-->
+        <section id="footer">
             <div class="footerLink">
                 <a href="design.html">Design</a>
             </div>

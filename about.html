@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--jQuery and Scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
+
+    <!--Style Sheets-->
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/aboutme.css" type="text/css" rel="stylesheet">
+
+    <!--Mulish Font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;800;900&display=swap" rel="stylesheet">
 
@@ -37,96 +44,162 @@
 </head>
 
 <body>
-    <section class="pageWrap">
-        <section class="header">
-            <div id=navContainer>
+    <section id="pageWrap">
+        <!--Pages are broken into 3 segments: Header, Content, Footer-->
+
+        <!--Header Area: Fixed to left side of screen, upper 100px on mobile-->
+        <section id="header">
+            <div id="navContainer">
+                <!--Applies shadow and rounded corners to the entire nav-->
                 <a href="index.html">
-                    <div id="logo">
+                    <!--Logo/Home Link is blank div with background image-->
+                    <div id="logoContainer">
+                        <div id="logo">
+                        </div>
                     </div>
                 </a>
                 <div id="navMenu">
-                    <div id="nav">
-                        <ul id="navLinkContainer">
-                            <li class="navLink">
-                                <a href="design.html">Design</a>
-                                <hr>
-                            </li>
-                            <li class="navLink">
-                                <a href="games.html">Games</a>
-                                <hr>
-                            </li>
-                            <li class="navLink">
-                                <a href="video.html">Video</a>
-                                <hr>
-                            </li>
-                            <li class="navLink">
-                                <a href="about.html">About</a>
-                                <hr>
-                            </li>
-                            <li class="navLink">
-                                <a class="external" target="_blank" href="nickso-resume.pdf">Resume</a>
-                                <hr>
-                            </li>
-                        </ul>
-                    </div>
+                    <!--Holds nav list and hamburger menu-->
+                    <ul id="navList">
+                        <li class="navLink">
+                            <a href="design.html">Design</a>
+                            <hr>
+                        </li>
+                        <li class="navLink">
+                            <a href="games.html">Games</a>
+                            <hr>
+                        </li>
+                        <li class="navLink">
+                            <a href="video.html">Video</a>
+                            <hr>
+                        </li>
+                        <li class="navLink">
+                            <a href="about.html">About</a>
+                            <hr>
+                        </li>
+                        <li class="navLink">
+                            <a class="external" target="_blank" href="nickso-resume.pdf">Resumé</a>
+                            <hr>
+                        </li>
+                    </ul>
                     <div id="hamburger">
                         <img src="./images/hamburger.png">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="content">
-            <div class="aboutMe">
-                <div class="intro">
-                    <p>
-                        Designer & producer of digital experiences with a passion for creating efficient,
-                        user-focused solutions for complex problems.
-                    </p>
-                    <br />
-                    <p>
-                        I combine research, rapid prototyping, and clean visual design with a decade of digital media
-                        production
-                        to
-                        strike a balance between business goals, tech constraints, and user needs.
-                    </p>
-                    <h2>
-                        <a href="mailto:contact@nickso.com">Contact Me</a>
-                    </h2>
+
+        <!--Content Area: Main portion of the screen.-->
+        <section id="content" class="aboutMe">
+            <div id="aboutOverview" class="chunk">
+                <img src="./images/portrait.png">
+                <h5>
+                    Digital Media <br /> Designer & Producer
+                </h5>
+                <p>
+                    Combining research, rapid prototyping, and clean visual design with a decade of digital media
+                    production
+                    to
+                    strike a balance between business goals, tech constraints, and user needs.
+                </p>
+                <div id=skillsList>
+                    <h6>Available for Hire:</h6>
+                    <ul>
+                        <li>UX Design</li>
+                        <li>Game Design</li>
+                        <li>Web Design</li>
+                        <li>Audio/Video Production</li>
+                        <li>Audio/Video Editing</li>
+                    </ul>
+                    <p id="caption">Rates Vary by Project</p>
+                    <p>Open to Full-Time Opportunities</p>
+                    <div id="socialLinks">
+                        <a target="_blank" class="external" href="mailto:contact@nickso.com">
+                            <div id="email"></div>
+                        </a>
+                        <a target="_blank" class="external" href="https://www.linkedin.com/in/nick-so/">
+                            <div id="linkedin"></div>
+                        </a>
+                    </div>
                 </div>
-                <div class="content1">
-                    <h2>UX / UI Design</h2>
-                    <h4>Figma / Adobe XD / Sketch / Balsamiq / Invision</h4>
-                    <h4>HTML5 / CSS / JavaScript / JQuery / Bootstrap </h4>
-                    <h4>User Research / Personas / Journey Maps</h4>
-                    <h4>Responsive Design / IxD (incl. AR & VR)</h4>
+            </div>
+            <div id="aboutUxui" class="chunk">
+                <h5>UX / UI Design</h5>
+                <div id=skillsList>
+                    <ul>
+                        <li>Figma</li>
+                        <li>Adobe XD</li>
+                        <li>Sketch</li>
+                        <li>HTML/CSS</li>
+                        <li>JQuery</li>
+                        <li>User Research</li>
+                        <li>Personas</li>
+                        <li>Journey Maps</li>
+                        <li>User Flows</li>
+                        <li>Wireframing</li>
+                        <li>Prototyping</li>
+                        <li>Responsive Design</li>
+                        <li>IxD</li>
+                    </ul>
                 </div>
-                <div class="content2">
-                    <h2>Game Design</h2>
-                    <h4>Level Design / Systems Design / Narrative Design </h4>
-                    <h4>Documentation Writing & Management</h4>
-                    <h4>Unity / Unreal Engine 4​​​​​​​</h4>
+            </div>
+            <div id="aboutGameDesign" class="chunk">
+                <h5>Game Design</h5>
+                <div id=skillsList>
+                    <ul>
+                        <li>Content Design</li>
+                        <li>Systems Design</li>
+                        <li>Level Design</li>
+                        <li>Narrative Design</li>
+                        <li>Economy Design</li>
+                        <li>Live Ops</li>
+                    </ul>
                 </div>
-                <div class="content3">
-                    <h2>Digital Media Production</h2>
-                    <h3>Video</h3>
-                    <h4>Adobe Premiere Pro / After Effects / Final Cut Pro</h4>
-                    <h4>Streaming / Youtube / Twitch / Vimeo</h4>
-                    <h3>Audio</h3>
-                    <h4>Adobe Audition / Podcast Production / Audio Editing</h4>
-                    <h4>Apple Podcasts / Spotify / Soundcloud</h4>
-                    <h3>Image</h3>
-                    <h4>Adobe Photoshop / Illustrator</h4>
+            </div>
+            <div id="aboutDigitalMedia" class="chunk">
+                <h5>Digital Media Production</h5>
+                <div id=skillsList>
+                    <h6>Video</h6>
+                    <ul>
+                        <li>Adobe Premiere Pro</li>
+                        <li>After Effects</li>
+                        <li>Final Cut Pro</li>
+                        <li>Streaming & Live Production</li>
+                    </ul>
+                    <h6>Audio</h6>
+                    <ul>
+                        <li>Adobe Audition</li>
+                        <li>Garage Band</li>
+                        <li>Podcast Production</li>
+                    </ul>
+                    <h6>Image</h6>
+                    <ul>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                    </ul>
                 </div>
-                <div class="content4">
-                    <h2>Collaboration & Productivity</h2>
-                    <h4>Google Drive / Dropbox / Microsoft Office</h4>
-                    <h4>Slack / Discord / Zoom / Google Meet</h4>
-                    <h4>Miro / Figma / Adobe Creative Cloud</h4>
-                    <h4>Jira / Trello / Confluence / Asana</h4>
+            </div>
+            <div id="aboutProduction" class="chunk">
+                <h5>Collaboration & Productivity</h5>
+                <div id=skillsList>
+                    <ul>
+                        <li>Google Workspace</li>
+                        <li>Microsoft Office</li>
+                        <li>Dropbox</li>
+                        <li>Slack</li>
+                        <li>Discord</li>
+                        <li>Zoom</li>
+                        <li>Jira</li>
+                        <li>Trello</li>
+                        <li>Confluence</li>
+                        <li>Asana</li>
+                    </ul>
                 </div>
             </div>
         </section>
-        <section class="footer">
+
+        <!--Footer Area: Locked to bottom of content-->
+        <section id="footer">
             <div class="footerLink">
                 <a href="design.html">Design</a>
             </div>
@@ -147,6 +220,7 @@
                 <a href="resume.html">Resume</a>
             </div>
         </section>
+
     </section>
 </body>
 

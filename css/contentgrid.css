@@ -1,0 +1,131 @@
+.contentGrid {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.twoColumnGrid{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contentGrid .card{
+    margin: 25px;
+}
+
+.contentGrid a{
+    text-decoration: none;
+}
+
+/*#region Overlay Styling */
+.overlayContainer {
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+}
+
+.overlay {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    border-radius: 15px;
+    z-index: 100;
+}
+
+.overlay iframe {
+    padding: 0;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+iframe .videoOnly{
+    height: 100%;
+    width: 100%;
+}
+
+.active {
+    display: block;
+    animation: overlayOn 0.8s ease 0.3s 1;
+    animation-fill-mode: forwards;
+}
+
+.inactive {
+    display: none;
+}
+
+.closed {
+    display: block;
+    animation: overlayOff 0.8s ease 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes overlayOn {
+    0% {
+        height: 0px;
+        width: 0px;
+    }
+    75% {
+        height: 0px;
+        max-height: 498px;
+        width: 50%;
+        max-width: 780px;
+        min-width: 300px;
+    }
+    100% {
+        height: 70%;
+        max-height: 498px;
+        width: 50%;
+        max-width: 780px;
+        min-width: 300px;
+    }
+}
+
+
+@keyframes overlayOff {
+    0% {
+        height: 70%;
+        max-height: 498px;
+        width: 50%;
+        max-width: 780px;
+        min-width: 300px;
+    }
+    75% {
+        height: 0px;
+        max-height: 498px;
+        width: 50%;
+        max-width: 780px;
+        min-width: 300px;
+    }
+    100% {
+        height: 0px;
+        width: 0px;
+    }
+}
+/*#endregion Overlay Styling */
+
+@media screen and (max-width:2100px){
+    .contentGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:1205px){
+    .contentGrid {
+        grid-template-columns: 1fr;
+    }
+}
