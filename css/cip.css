@@ -4,7 +4,7 @@ html, body {
 
 .jumbotron {
     background-image: linear-gradient(to bottom, #444c5c00 30%, #444c5c 90%), url('../images/case-study-images/CIP/blm.jpg');
-    color: #ffffffb3;
+    color: #ffffffea;
 }
 
 /* Intro */
@@ -27,9 +27,17 @@ html, body {
     color: #444c5c;
 }
 
+.problem{
+    border-right: 3px solid #444c5c;
+}
+
 /*Research */
 .research {
     background-color: #78A5A3;
+    color: #E3E5E8;
+}
+
+.research a{
     color: #E3E5E8;
 }
 

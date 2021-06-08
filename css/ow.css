@@ -27,41 +27,32 @@ html, body {
     color: #ffffff;
 }
 
+.problem{
+    border-right: 3px solid #ffffff;
+}
+
 /*Research */
 .research {
     background-color: #405275;
     color: #ffffff;
 }
 
-/* Ideation */
-.ideation {
-    background-color: #43484c;
+.research a{
     color: #ffffff;
 }
 
-.competitor-analysis{
-    padding: 20px 0 30px 0;
-    border-bottom: 3px solid #ffffff;
+.personas{
+    border-top: 3px solid #ffffff;
 }
-
-.cardsort{
-    padding: 20px 0 30px 0;
-    border-bottom: 3px solid #ffffff;
-}
-
-.userflow{
-    padding: 20px 0 20px 0;
-}
-
 
 /* Prototyping */
 .prototyping {
-    background-color: #f99e1a;
+    background-color: #218ffe;
     color: #ffffff;
 }
 
 /* Conclusion */
 .conclusion {
-    background-color: #405275;
+    background-color: #f99e1a;
     color: #ffffff;
 }

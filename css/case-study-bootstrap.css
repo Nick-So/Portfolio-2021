@@ -30,7 +30,7 @@ p{
 
 ul{
     font-size: 14pt;
-    list-style: decimal;
+    list-style: circle;
     padding: 0 20px 0 20px;
     text-align: left;
 }
@@ -59,7 +59,7 @@ li{
 /*#region Intro */
 .intro{
     margin-top: 25px;
-    padding: 50px;
+    padding: 25px;
     border-radius: 5px;
     text-align: left;
     display: grid;
@@ -97,6 +97,7 @@ li{
 
 /*#region Overview */
 .overview {
+    padding: 0 25px 0 25px;
     margin-top: 25px;
     border-radius: 5px;
     display: grid;
@@ -108,7 +109,6 @@ li{
 .problem{
     grid-area: problem;
     padding: 0 25px 25px 25px;
-    border-right: 3px solid #444c5c;
 }
 
 .solution{
@@ -121,6 +121,7 @@ li{
 
 /*#region Research */
 .research {
+    padding: 0 25px 25px 25px;
     margin-top: 25px;
     border-radius: 5px;
     display: grid;
@@ -142,6 +143,10 @@ li{
 
 .insights{
     padding: 0 25px 25px 25px;
+}
+
+.personas{
+    padding: 20px 0 30px 0;
 }
 
 /*#endregion Research */
@@ -228,5 +233,6 @@ li{
     padding: 0 25px 25px 25px;
     text-align: left;
 }
+
 
 /*#endregion Conclusion */
