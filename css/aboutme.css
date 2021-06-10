@@ -38,13 +38,13 @@
 
 #aboutOverview img {
     width: 80%;
-    max-width: 300px;
+    max-width: 250px;
     min-width: 200px;
     margin-bottom: 30px;
 }
 
 #socialLinks {
-    margin-top: 40px;
+    margin: 40px 0 20px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
