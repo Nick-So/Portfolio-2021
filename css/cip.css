@@ -41,6 +41,10 @@ html, body {
     color: #E3E5E8;
 }
 
+.plan {
+    border-right: 3px solid #E3E5E8;
+}
+
 /* Ideation */
 .ideation {
     background-color: #E1B16A;
@@ -72,4 +76,20 @@ html, body {
 .conclusion {
     background-color: #F56C63;
     color: #444c5c;
+}
+
+@media screen and (max-width: 1025px) {
+    .problem{
+        border-right: none;
+        border-bottom: 3px solid #444c5c;
+    }
+    .plan{
+        border-right: none;
+        border-bottom: 3px solid #E3E5E8;
+    }
+    .reflection{
+        border-right: none;
+        border-bottom: 3px solid #444c5c;
+    }
+
 }

@@ -1,4 +1,5 @@
 /*#region General */
+
 .case-study {
     position: relative;
     grid-area: content;
@@ -8,34 +9,33 @@
     width: 100%;
 }
 
-.case-study img{
+.case-study img {
     max-width: 70%;
     border-radius: 5px;
 }
 
-h1{
+h1 {
     grid-area: title;
-    padding-top: 20px;
+    padding-top: 25px;
 }
 
-h4{
+h4 {
     font-weight: bolder;
     text-align: left;
 }
 
-p{
+p {
     font-size: 16pt;
     text-align: left;
 }
 
-ul{
+ul {
     font-size: 14pt;
     list-style: circle;
-    padding: 0 20px 0 20px;
     text-align: left;
 }
 
-li{
+li {
     margin-bottom: 5px;
 }
 
@@ -44,7 +44,7 @@ li{
     margin-bottom: 10px;
     height: 50vh;
     background-color: black;
-    background-position:center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     font-weight: bolder;
@@ -53,11 +53,14 @@ li{
     justify-content: flex-end;
     align-items: center;
     border-radius: 5px;
+    text-shadow: 2px 2px 2px black;
 }
+
 /*#endregion General */
 
 /*#region Intro */
-.intro{
+
+.intro {
     margin-top: 25px;
     padding: 25px;
     border-radius: 5px;
@@ -69,49 +72,51 @@ li{
     grid-template-areas: "team-tools role";
 }
 
-.intro ul{
+.intro ul {
     list-style: none;
 }
 
-.intro li{
-    margin-bottom: 20px;
+.intro li {
+    margin-bottom: 25px;
 }
 
-.team-tools{
+.team-tools {
     grid-area: team-tools;
     align-items: center;
     justify-content: center;
-    padding: 20px 20px 0 20px;
+    padding: 25px 25px 0 25px;
     height: 100%;
 }
 
-.role{
+.role {
     grid-area: role;
     align-items: center;
     justify-content: center;
-    padding: 20px 20px 0 20px;
+    padding: 25px 25px 0 25px;
     height: 100%;
     border-radius: 5px;
 }
+
 /*#endregion Intro */
 
 /*#region Overview */
+
 .overview {
     padding: 0 25px 0 25px;
     margin-top: 25px;
     border-radius: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: fit-content 1fr;
     grid-template-areas: "title title" "problem solution";
 }
 
-.problem{
+.problem {
     grid-area: problem;
     padding: 0 25px 25px 25px;
 }
 
-.solution{
+.solution {
     grid-area: solution;
     padding: 0 25px 25px 25px;
     text-align: left;
@@ -120,65 +125,69 @@ li{
 /*#endregion Overview */
 
 /*#region Research */
+
 .research {
     padding: 0 25px 25px 25px;
     margin-top: 25px;
     border-radius: 5px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: fit-content 1fr;
     grid-template-areas: "title" "data";
 }
 
-.data{
+.data {
     grid-area: data;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.plan{
+.plan {
     padding: 0 25px 25px 25px;
     border-right: 3px solid #E3E5E8;
 }
 
-.insights{
+.insights {
     padding: 0 25px 25px 25px;
 }
 
-.personas{
-    padding: 20px 0 30px 0;
+.personas {
+    padding: 25px 0 25px 0;
 }
 
 /*#endregion Research */
 
 /*#region Ideation */
+
 .ideation {
     margin-top: 25px;
     padding: 0 25px 25px 25px;
     border-radius: 5px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: fit-content 1fr;
     grid-template-areas: "title" "ideationContent";
 }
 
-.ideationContent{
+.ideationContent {
     grid-area: ideationContent;
 }
+
 /*#endregion Ideation */
 
 /*#region Prototyping */
+
 .prototyping {
     margin-top: 25px;
     padding: 0 25px 25px 25px;
     border-radius: 5px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: fit-content 1fr;
     grid-template-areas: "title" "prototypingContent";
 }
 
-.prototypingContent{
+.prototypingContent {
     grid-area: prototypingContent;
     display: flex;
     flex-direction: column;
@@ -186,53 +195,96 @@ li{
     justify-content: center;
 }
 
-.wireframe{
-    padding: 20px 0 30px 0;
+.wireframe {
+    padding: 25px 0 25px 0;
     border-bottom: 3px solid #E3E5E8;
 }
 
-.hifi{
-    padding: 20px 0 30px 0;
+.hifi {
+    padding: 25px 0 25px 0;
     border-bottom: 3px solid #E3E5E8;
 }
 
-.prototype{
-    padding-top: 20px;
-    height: 100vh;
+.prototype {
+    padding-top: 25px;
+    height: 40vw;
     width: 100%;
 }
 
-.prototype iframe{
+.prototype iframe {
     height: 90%;
     width: 70%;
     border-radius: 5px;
 }
 
-
 /*#endregion Prototyping */
 
 /*#region Conclusion */
+
 .conclusion {
     margin-top: 25px;
     margin-bottom: 25px;
+    padding: 0 25px 25px 25px;
     border-radius: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: fit-content 1fr;
     grid-template-areas: "title title" "reflection direction";
 }
 
-.reflection{
+.reflection {
     grid-area: reflection;
     padding: 0 25px 25px 25px;
     border-right: 3px solid #444c5c;
 }
 
-.direction{
+.direction {
     grid-area: direction;
     padding: 0 25px 25px 25px;
     text-align: left;
 }
 
+@media screen and (max-width: 1025px) {
+    #content.case-study{
+        padding: 25px 0 25px 0;
+    }
 
-/*#endregion Conclusion */
+    .case-study img {
+        width: 100%;
+        max-width: 100%;
+    }
+    .intro {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "team-tools" "role";
+    }
+    .overview {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr 1fr;
+        grid-template-areas: "title" "problem" "solution";
+    }
+    .data {
+        grid-area: data;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .insights {
+        padding: 25px;
+    }
+    .prototype {
+        padding: 25px 25px 50px 25px;
+        height: 40vh;
+        width: 100%;
+    }
+
+    .prototype iframe {
+        height: 100%;
+        width: 100%;
+    }
+
+    .conclusion {
+        grid-template-columns: 1fr;
+        grid-template-rows: fit-content 1fr 1fr;
+        grid-template-areas: "title" "reflection" "direction";
+    }
+}

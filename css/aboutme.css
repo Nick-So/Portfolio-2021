@@ -50,7 +50,8 @@
     align-items: center;
     justify-content: space-between;
     height: 20%;
-    max-height: 150px;
+    max-height: 50px;
+    min-height: 50px;
     width: 100%;
 }
 
