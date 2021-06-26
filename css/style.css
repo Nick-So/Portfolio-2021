@@ -231,29 +231,28 @@
 
     .card {
         max-width: 700px;
+        min-height: 315px;
         overflow: hidden;
-        border-radius: 5px;
-        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
-        background-color: #4A3061;
-        color: #E3E5E8;
+        color: #313131;
         cursor: pointer;
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 50px;
-        grid-template-areas: "image" "title";
+        display: flex;
+        flex-direction: column;
     }
 
     .card img {
         grid-area: image;
         width: 100%;
         object-fit: cover;
+        margin: 0 0 10px 0;
     }
 
     .card h6{
         grid-area: title;
+        margin: 0 0 10px 0;
+        padding: 0 15px 0 15px;
+    }
+
+    .card p{
         margin: 0;
         padding: 0 15px 0 15px;
     }

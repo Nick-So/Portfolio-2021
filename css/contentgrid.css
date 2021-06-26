@@ -1,6 +1,6 @@
 .contentGrid {
     display: grid;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -118,7 +118,7 @@ iframe .videoOnly{
 }
 /*#endregion Overlay Styling */
 
-@media screen and (max-width:2100px){
+@media screen and (max-width:1600px){
     .contentGrid {
         grid-template-columns: 1fr 1fr;
     }
