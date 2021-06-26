@@ -249,12 +249,16 @@
     .card h6{
         grid-area: title;
         margin: 0 0 10px 0;
-        padding: 0 15px 0 15px;
+        padding: 0 5px 0 5px;
     }
 
     .card p{
-        margin: 0;
-        padding: 0 15px 0 15px;
+        margin: 0 0 10px 0;
+        padding: 0 5px 0 5px;
+    }
+
+    .card .gameRole{
+        font-size: 12px;
     }
 
     /*#endregion Card */

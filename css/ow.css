@@ -6,7 +6,8 @@ html, body {
 
 .jumbotron {
     background-image: linear-gradient(to bottom, #ffffff00 30%, #ffffff 90%), url('../images/case-study-images/OW/ow-hero-img.jpg');
-    color: #43484c;
+    color: #218ffe;
+    text-shadow: -1px -1px 0 #405275, 1px -1px 0 #405275, -1px 1px 0 #405275, 1px 1px 0 #405275;
 }
 
 /* Intro */

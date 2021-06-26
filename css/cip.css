@@ -5,6 +5,7 @@ html, body {
 .jumbotron {
     background-image: linear-gradient(to bottom, #444c5c00 30%, #444c5c 90%), url('../images/case-study-images/CIP/blm.jpg');
     color: #ffffffea;
+    text-shadow: -1px -1px 0 #444c5c, 1px -1px 0 #444c5c, -1px 1px 0 #444c5c, 1px 1px 0 #444c5c;
 }
 
 /* Intro */
