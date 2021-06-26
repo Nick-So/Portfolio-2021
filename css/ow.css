@@ -2,11 +2,9 @@ html, body {
     background-color: #fff;
 }
 
-
-
 .jumbotron {
     background-image: linear-gradient(to bottom, #ffffff00 30%, #ffffff 90%), url('../images/case-study-images/OW/ow-hero-img.jpg');
-    color: #218ffe;
+    color: #f99e1a;
     text-shadow: -1px -1px 0 #405275, 1px -1px 0 #405275, -1px 1px 0 #405275, 1px 1px 0 #405275;
 }
 
@@ -21,6 +19,10 @@ html, body {
 
 .role{
     background-color: #00000080;
+    color: #ffffff;
+}
+
+.role a{
     color: #ffffff;
 }
 

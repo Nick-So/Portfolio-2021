@@ -22,6 +22,10 @@ html, body {
     color: #ffffffb3;
 }
 
+.role a{
+    color: #E3E5E8;
+}
+
 /* Overview */
 .overview {
     background-color: #F56C63;

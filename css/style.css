@@ -76,8 +76,8 @@
         min-height: 100%;
         display: grid;
         grid-template-columns: 300px 10fr 1fr;
-        grid-template-rows: 1fr 100px;
-        grid-template-areas: "header content buffer" "footer footer footer";
+        grid-template-rows: 1fr;
+        grid-template-areas: "header content buffer";
         justify-items: center;
         align-content: center;
         /*Buffer area adds blank area to the right of content to balance out header on large screens*/
@@ -216,6 +216,7 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        display: none;
     }
 
     .footerLink a {
