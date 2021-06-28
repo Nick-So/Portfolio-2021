@@ -28,6 +28,11 @@ p {
     text-align: left;
 }
 
+ol {
+    font-size: 14pt;
+    text-align: left;
+}
+
 ul {
     font-size: 14pt;
     list-style: circle;
@@ -83,7 +88,6 @@ li {
     align-items: center;
     justify-content: center;
     padding: 25px 25px 0 25px;
-    height: 100%;
 }
 
 .role {
@@ -149,8 +153,8 @@ li {
     padding: 0 25px 25px 25px;
 }
 
-.personas {
-    padding: 25px 0 25px 0;
+.personas, .usertests{
+    padding: 25px 0px 25px 0px;
 }
 
 /*#endregion Research */
@@ -171,6 +175,9 @@ li {
     grid-area: ideationContent;
 }
 
+.competitor-analysis, .carsort, .userflow, .heuristic-eval{
+    padding: 25px 0 25px 0;
+}
 /*#endregion Ideation */
 
 /*#region Prototyping */
@@ -193,14 +200,8 @@ li {
     justify-content: center;
 }
 
-.wireframe {
+.wireframe, .hifi .styleguide{
     padding: 25px 0 25px 0;
-    border-bottom: 3px solid #E3E5E8;
-}
-
-.hifi {
-    padding: 25px 0 25px 0;
-    border-bottom: 3px solid #E3E5E8;
 }
 
 .prototype {

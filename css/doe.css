@@ -1,0 +1,101 @@
+html, body {
+    background-color: #fff;
+}
+
+.jumbotron {
+    background-image: linear-gradient(to bottom, #ffffff00 30%, #ffffff 90%), url('../images/case-study-images/DOE/jumbotron.jpg');
+    color: #ADB8D9;
+    text-shadow: -1px -1px 0 #405275, 1px -1px 0 #405275, -1px 1px 0 #405275, 1px 1px 0 #405275;
+}
+
+/* Intro */
+.intro{
+    background-color: #646464;
+}
+
+.team-tools{
+    color: #E3E5E8;
+}
+
+.role{
+    background-color: #00000080;
+    color: #ffffff;
+}
+
+.role a{
+    color: #ffffff;
+}
+
+/* Overview */
+.overview {
+    background-color: #035AA6;
+    color: #ffffff;
+}
+
+.problem{
+    border-right: 3px solid #ffffff;
+}
+
+/*Research */
+.research {
+    background-color: #02733E;
+    color: #ffffff;
+}
+
+.research a{
+    color: #ffffff;
+}
+
+.plan {
+    border-right: 3px solid #ffffff;
+}
+
+.personas{
+    border-top: 3px solid #ffffff;
+}
+
+.usertests{
+    border-top: 3px solid #ffffff;
+}
+
+/* Ideation */
+.ideation {
+    background-color: #F2B90F;
+    color: #646464;
+}
+
+.competitor-analysis{
+    border-bottom: 3px solid #646464;
+}
+
+/* Prototyping */
+.prototyping {
+    background-color: #03A65A;
+    color: #ffffff;
+}
+
+/* Conclusion */
+.conclusion {
+    background-color: #f99e1a;
+    color: #ffffff;
+}
+
+.reflection {
+    border-right: 3px solid #ffffff;
+}
+
+@media screen and (max-width: 1025px) {
+    .problem{
+        border-right: none;
+        border-bottom: 3px solid #ffffff;
+    }
+    .plan{
+        border-right: none;
+        border-bottom: 3px solid #ffffff;
+    }
+    .reflection{
+        border-right: none;
+        border-bottom: 3px solid #ffffff;
+    }
+
+}

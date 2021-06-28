@@ -57,19 +57,12 @@ html, body {
 }
 
 .competitor-analysis{
-    padding: 20px 0 30px 0;
     border-bottom: 3px solid #444c5c;
 }
 
 .cardsort{
-    padding: 20px 0 30px 0;
     border-bottom: 3px solid #444c5c;
 }
-
-.userflow{
-    padding: 20px 0 20px 0;
-}
-
 
 /* Prototyping */
 .prototyping {
