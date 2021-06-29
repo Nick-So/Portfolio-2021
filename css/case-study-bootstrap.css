@@ -15,7 +15,6 @@
 
 h1 {
     grid-area: title;
-    padding-top: 25px;
 }
 
 h4 {
@@ -104,7 +103,7 @@ li {
 /*#region Overview */
 
 .overview {
-    padding: 0 25px 0 25px;
+    padding: 25px;
     margin-top: 25px;
     border-radius: 5px;
     display: grid;
@@ -129,8 +128,8 @@ li {
 /*#region Research */
 
 .research {
-    padding: 0 25px 25px 25px;
     margin-top: 25px;
+    padding: 25px;
     border-radius: 5px;
     display: grid;
     grid-template-columns: 1fr;
@@ -153,8 +152,12 @@ li {
     padding: 0 25px 25px 25px;
 }
 
-.personas, .usertests{
+.personas{
     padding: 25px 0px 25px 0px;
+}
+
+.usertests{
+    padding: 25px 0px 0px 0px;
 }
 
 /*#endregion Research */
@@ -163,7 +166,7 @@ li {
 
 .ideation {
     margin-top: 25px;
-    padding: 0 25px 25px 25px;
+    padding: 25px;
     border-radius: 5px;
     display: grid;
     grid-template-columns: 1fr;
@@ -184,7 +187,7 @@ li {
 
 .prototyping {
     margin-top: 25px;
-    padding: 0 25px 25px 25px;
+    padding: 25px;
     border-radius: 5px;
     display: grid;
     grid-template-columns: 1fr;
@@ -211,6 +214,7 @@ li {
 }
 
 .prototype iframe {
+    margin-top: 25px;
     height: 90%;
     width: 70%;
     border-radius: 5px;
@@ -223,7 +227,7 @@ li {
 .conclusion {
     margin-top: 25px;
     margin-bottom: 25px;
-    padding: 0 25px 25px 25px;
+    padding: 25px;
     border-radius: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -259,8 +263,11 @@ li {
     }
     .overview {
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 1fr 1fr;
+        grid-template-rows: 100px auto auto;
         grid-template-areas: "title" "problem" "solution";
+    }
+    .solution, .usertests{
+        padding: 25px 25px 0px 25px;
     }
     .data {
         grid-area: data;
@@ -285,5 +292,9 @@ li {
         grid-template-columns: 1fr;
         grid-template-rows: fit-content 1fr 1fr;
         grid-template-areas: "title" "reflection" "direction";
+    }
+
+    .direction {
+        padding: 0 25px 0 25px;
     }
 }
