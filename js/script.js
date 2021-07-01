@@ -8,7 +8,7 @@ jQuery(function ($) {
   $(document).on('click', "a:not('.external')", function (event) {
     event.preventDefault();
     linkLocation = this.href;
-    $("body").fadeOut(1000, function () { redirectPage(linkLocation) });
+    $('body').fadeOut(1000, function () { redirectPage(linkLocation) });
   });
 
   //Navigation Slider
@@ -31,7 +31,7 @@ jQuery(function ($) {
     $(`#${id}.overlay`).removeClass('active').addClass('closed');
     $('.overlayContainer').fadeOut(1000);
     setTimeout(function () { $(`#${id}.overlay`).removeClass('closed').addClass('inactive'); }, 800);
-    setTimeout(function () {$(`#${id} iframe`).attr('src', $(`#${id} iframe`).attr('src'));}, 800);
+    setTimeout(function () { $(`#${id} iframe`).attr('src', $(`#${id} iframe`).attr('src')); }, 800);
   });
 
 

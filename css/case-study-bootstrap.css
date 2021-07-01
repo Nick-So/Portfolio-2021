@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 50px;
 }
 
 .case-study img {
@@ -208,7 +209,7 @@ li {
 }
 
 .prototype {
-    padding-top: 25px;
+    padding: 25px;
     height: 40vw;
     width: 100%;
 }
@@ -278,13 +279,13 @@ li {
         padding: 25px;
     }
     .prototype {
-        padding: 25px 25px 50px 25px;
+        padding: 25px;
         height: 40vh;
         width: 100%;
     }
 
     .prototype iframe {
-        height: 100%;
+        height: 90%;
         width: 100%;
     }
 

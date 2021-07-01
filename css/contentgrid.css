@@ -3,6 +3,7 @@
     align-items: flex-start;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 25px;
 }
 
 .twoColumnGrid{
@@ -10,6 +11,7 @@
     align-items: flex-start;
     justify-content: center;
     grid-template-columns: 1fr 1fr;
+    padding: 25px;
 }
 
 .contentGrid .card{
