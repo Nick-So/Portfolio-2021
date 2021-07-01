@@ -3,7 +3,7 @@
     align-items: flex-start;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 25px;
+    padding: 0 25px 25px 25px;
 }
 
 .twoColumnGrid{
@@ -11,11 +11,11 @@
     align-items: flex-start;
     justify-content: center;
     grid-template-columns: 1fr 1fr;
-    padding: 25px;
+    padding: 0 25px 25px 25px;
 }
 
 .contentGrid .card{
-    margin: 25px;
+    margin: 0 25px 25px 25px;
 }
 
 .contentGrid a{

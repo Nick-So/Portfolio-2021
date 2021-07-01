@@ -88,6 +88,10 @@
         max-width: 100%;
     }
 
+    #content h1{
+        padding: 50px 0 0 50px;
+    }
+
     .chunk {
         padding: 50px;
         margin-bottom: 50px;
@@ -237,7 +241,6 @@
         cursor: pointer;
         display: flex;
         flex-direction: column;
-        margin: 25px;
     }
 
     .card img {
@@ -459,6 +462,9 @@
         }
         #content {
             padding: 50px 0 50px 0;
+        }
+        #content h1{
+            padding: 0 0 0 50px;
         }
         #footer {
             display: none;
